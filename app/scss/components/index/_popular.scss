@@ -1,0 +1,102 @@
+.popular {
+  margin-bottom: 130px;
+
+  @media (max-width: 1188px) {
+   margin-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+  }
+}
+
+.products {
+  &__content {
+    display: flex;
+    justify-content: center;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+
+    @media (max-width: 1188px) {
+     margin-bottom: 20px;
+    }
+  }
+
+  &__item {
+    margin: 0 15px;
+    width: 270px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 35px 45px;
+    font-weight: 700;
+    position: relative;
+
+    @media (max-width: 1188px) {
+     margin-bottom: 50px;
+    }
+    
+    &:hover {
+      transition: all 0.5s;
+      .products__shadow {
+        display: block;
+      }
+    }
+
+    &--mountain {
+      background-image: url(../images/popular/1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    &--chui {
+      background-image: url(../images/popular/2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    &--crem {
+      background-image: url(../images/popular/3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    &--issyk {
+      background-image: url(../images/popular/4.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+
+  &__shadow {
+    position: absolute;
+    bottom: -65px;
+    z-index: -1;
+    display: none;
+  }
+
+  &__img {
+    margin-bottom: 35px;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    color: $accent;
+    margin-bottom: 5px;
+  }
+
+  &__weight {
+    font-weight: 400;
+  }
+
+  
+}

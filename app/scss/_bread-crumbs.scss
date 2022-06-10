@@ -1,0 +1,36 @@
+.bread-crumbs {
+  padding-top: 70px;
+  margin-bottom: 45px;
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding-right: 30px;
+    position: relative;
+    
+    &::after {
+      content: "/";
+      position: absolute;
+      color: $link;
+      right: 10px;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    &:last-child {
+      padding-right: 0;
+      
+      &::after {
+        display: none;
+      }
+    }
+  }
+  
+  &__link {
+    color: $link;
+    font-size: 18px;
+  }
+}

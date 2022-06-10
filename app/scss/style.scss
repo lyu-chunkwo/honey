@@ -1,0 +1,33 @@
+@import "fonts";
+@import "vars";
+@import "reset";
+@import "libs";
+@import "global";
+
+// ! header
+@import "components/index/header";
+
+// ! header-pages
+@import "header-pages";
+
+// ! about
+@import "components/index/about";
+
+// ! popular
+@import "components/index/popular";
+
+// ! combined-content
+@import "components/index/combined-content";
+
+// ! footer
+@import "footer";
+
+// ! bread-crumbs
+@import "bread-crumbs";
+
+// ! products
+@import "components/products/products";
+
+// ! products-single
+@import "components/products/products-single";
+
